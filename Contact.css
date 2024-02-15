@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
+body {
+    margin: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo img {
+
+    height: 70px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: end;
+}
+
+.navbar li {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    animation: navbar 1s;
+    margin-right: 40px;
+}
+
+.navbar li a {
+    font-family: 'Merriweather', serif;
+    padding: 3px;
+    margin-left: 80px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.2s;
+    text-decoration: underline;
+    text-underline-position: under;
+
+}
+
+.navbar li a:hover {
+    transition-duration: 0.2s;
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+    text-decoration: underline;
+    text-decoration-color: rgba(234, 0, 255, 0.822);
+    color: rgba(234, 0, 255, 0.616);
+}
+
+main {
+    margin-top: 10px;
+    height: 828px;
+    background-color: aqua;
+    width: 100%;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    color: rgba(234, 0, 255, 0.822);
+    font-size: 3.5rem;
+    font-weight: 200;
+    font-family: 'Merriweather', serif;
+}
+
+main p {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: inline;
+    font-size: 1.8rem;
+    padding: 20px;
+    background-color: white;
+    width: 35%;
+    box-shadow: 1px 1px 20px 5px black;
+    border: 1px solid rgb(109, 109, 109);
+    /* ombre du form "box-shadow" */
+}
+
+h4 {
+    color: #00bcd4;
+    margin: 0;
+}
+
+.underline {
+    margin-top: 10px;
+    width: 38%;
+    margin-bottom: 20px;
+    height: 3px;
+    background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+}
+
+.boite-inscription {
+    padding-top: 50px;
+    margin: 0 350px;
+    display: flex;
+    justify-content: start;
+    height: 550px;
+    color: gray;
+}
+
+.Nom {
+    display: flex;
+    justify-content: start;
+    width: 35%;
+}
+
+.Nom div label {
+    display: flex;
+    justify-content: start;
+    font-weight: 200;
+}
+
+.Prenom {
+    display: flex;
+    justify-content: end;
+}
+
+.Prenom div label {
+    display: flex;
+    justify-content: center;
+}
+
+.Phone {
+    display: flex;
+    justify-content: start;
+}
+
+.Phone div label {
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+    justify-content: end;
+}
+
+.email div label {
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    display: flex;
+    justify-content: start;
+}
+
+.message input {
+    width: 100%;
+    height: 70px;
+}
+
+.message div label {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.btn button {
+    background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    cursor: pointer;
+    transition-duration: 1s;
+    font-size: 1.12rem;
+}
+
+.btn button:hover {
+    transition-duration: 1s;
+    transition: 0.7s ease-in-out;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* Finir le form + commencer le "Resquest call black " */

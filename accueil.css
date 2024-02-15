@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    background: url(img/Leonardo_Diffusion_XL_image_dun_paysage_bord_de_mer_dile_parad_0.jpg)no-repeat;
+    background-size: cover;
+    margin: 5px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo img {
+
+    height: 70px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    font-size: 1.4rem;
+    flex-direction: end;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: end;
+
+}
+
+.navbar li {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    margin-right: 40px;
+    animation: sloraro 0.8s;
+
+}
+
+.navbar li a {
+    
+    padding: 3px;
+    margin-left: 80px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    outline: 1px solid;
+    outline-color: #ffffff70;
+    transition-duration: 0.2s;
+}
+
+.navbar li a:hover {
+    transition-duration: 0.2s;
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+    background-color: white;
+    color: black;
+    outline: 1px solid;
+    outline-color: black;
+}
+
+#home {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    outline: 1px solid;
+    outline-color: black;
+}
+
+main {
+    position: relative;
+    height: 700px;
+}
+
+H1 {
+    position: absolute;
+    bottom: 362.5px;
+    left: 760px;
+    font-family: 'Lobster', sans-serif;
+    font-size: 3.5em;
+    color: white;
+    font-weight: 900;
+    word-spacing: 4px;
+    text-shadow: 4px 2px 0px black;
+}
+
+.btn {
+    font-size: 1.4rem;
+    display: flex;
+    width: 18%;
+    height: 390px;
+    align-items: end;
+}
+
+.btn a {
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    outline: 1px solid;
+    outline-color: #ffffff70;
+    padding: 4px;
+}
+
+.btn a:hover {
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+    background-color: white;
+    color: black;
+    outline: 1px solid;
+    outline-color: black;
+    transform: scale(1.1);
+}
+
+.icon {
+    height: 50px;
+    width: 1%;
+    margin-right: 40px;
+
+}
+
+.icon img {
+    display: flex;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: 1px solid;
+    outline-color: #ffffff70;
+
+}
+
+.icon a img:hover {
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+    background-color: white;
+    outline: 1px solid;
+    outline-color: black;
+    transform: scale(1.1);
+}
+
+@keyframes sloraro {
+    from {
+        transform: translateY(-200px);
+        opacity: 0.5;
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

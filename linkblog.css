@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
+body {
+    margin: 5px;
+    background: url(img/background-horaire.webp)no-repeat;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo img {
+
+    height: 70px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: end;
+}
+
+.navbar li {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    animation: navbar 1s;
+    margin-right: 40px;
+}
+
+.navbar li a {
+    font-family: 'Merriweather', serif;
+    padding: 3px;
+    margin-left: 80px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    outline: 1px solid;
+    outline-color: #ffffff70;
+    transition-duration: 0.2s;
+
+}
+
+.navbar li a:hover {
+    transition-duration: 0.2s;
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+    background-color: white;
+    color: black;
+    outline: 1px solid;
+    outline-color: black;
+}
+
+@keyframes navbar {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* fin de haut de page  */
+
+
+
+
+
+
+
+#Blog-color {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    outline: 2px solid;
+    outline-color: #000000;
+    color: black;
+}
+
+main {
+    height: 1000px;
+}
+
+.blog {
+    background-color: rgb(45, 62, 92);
+    background-size: cover;
+    position: relative;
+    margin-top: 150px;
+}
+
+.blog img {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 40%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.blog img:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.destination {
+    display: flex;
+    height: 350px;
+    text-align: center;
+    align-items: end;
+    animation: sloraro 1s;
+}
+
+h1 {
+    font-family: 'Lobster', sans-serif;
+    color: rgb(0, 0, 0);
+    outline: 1px solid;
+    outline-color: #ffffffb6;
+    font-size: 4.4rem;
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    /* background: linear-gradient(#5f8b3e, #4a6899); */
+    text-shadow: 4px 2px 0px rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    animation: h1animation 1.8s;
+}
+
+@keyframes h1animation {
+    from {
+        background-color: white;
+        opacity: 1;
+    }
+
+    50% {
+        background-color: white;
+        opacity: 1;
+    }
+}
+
+h1:hover {
+    background-color: white;
+    transition-duration: 0.5s;
+    transition: 0.7s ease-in-out;
+}
+
+
+.Maurice {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 30px;
+    left: 800px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+.Thaïlande {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 820px;
+    top: 480px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    cursor: pointer;
+}
+
+.Rarotonga {
+    font-family: 'Lobster', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    left: 820px;
+    top: 940px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    cursor: pointer;
+
+}
+
+@keyframes sloraro {
+    from {
+        transform: translateY(320px);
+        opacity: 0.5;
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.prix1 {
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    position: absolute;
+    left: 1200px;
+    font-size: 3rem;
+    font-weight: 700;
+    top: 0;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.prix2 {
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    position: absolute;
+    left: 1470px;
+    font-size: 3rem;
+    font-weight: 700;
+    top: 480px;
+    cursor: pointer;
+}
+
+.prix3 {
+    font-family: 'Lobster', sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 1440px;
+    font-size: 3rem;
+    font-weight: 700;
+    top: 940px;
+    cursor: pointer;
+}
+
+/* fin de la mid page  */
+h2 {
+    font-family: 'Lobster', sans-serif;
+    color: rgb(0, 0, 0);
+    outline: 1px solid;
+    outline-color: #ffffffb6;
+    font-size: 4.4rem;
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    /* background: linear-gradient(#5f8b3e, #4a6899); */
+    text-shadow: 4px 2px 0px rgb(255, 255, 255);
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+h2:hover {
+    background-color: rgba(255, 255, 255, 0.685);
+    transition-duration: 0.5s;
+    transition: 0.7s ease-in-out;
+}
+
+.bottom-page {
+    height: 600px;
+    position: relative;
+}
+
+.infospratique {
+    position: relative;
+    justify-content: end;
+    width: 20%;
+}
+
+.second-tittle {
+    position: absolute;
+    top: 0;
+    left: 800px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.infospratique ul li {
+    position: relative;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    left: 810px;
+    top: 50px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.suivez-nous {
+    position: absolute;
+    color: white;
+    top: 147px;
+    font-size: 2rem;
+    font-weight: 700;
+    left: 190px;
+}
+
+.Services-client {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    top: 250px;
+    left: 190px;
+    padding: 0 auto;
+}
+
+.Services-client a {
+    display: flex;
+    justify-content: start;
+    color: white;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+.Services-client ul {
+    padding: 0px;
+}
+
+.Espace-voyage {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 1300px;
+    top: 147px;
+    font-weight: 700;
+    text-shadow: 3px -1px 6px black;
+}
+
+.Voyage {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    top: 0;
+    left: 1300px;
+    top: 210px;
+    font-weight: 700;
+    text-shadow: 3px -1px 6px black;
+}
+
+.social {
+    width: 400px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.social a img {
+    position: relative;
+    right: 25px;
+    height: 55px;
+}
+
+.social a {
+    display: flex;
+    justify-content: start;
+}
+
+/* Responsive */
+
+@media screen and (max-width:1490px) {
+    body {
+        width: 110%;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    body {
+        width: 120%;
+    }
+
+    .blog {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+
+    .blog {
+        padding: 20px;
+    }
+
+    .Maurice {
+        left: 700px;
+        top: 30px;
+    }
+
+    .Thaïlande {
+        left: 700px;
+        margin-top: 30px;
+    }
+
+    .Rarotonga {
+        left: 700px;
+        margin-top: 30px;
+    }
+
+    .prix1 {
+        left: 1100px;
+        top: 30px;
+    }
+
+    .prix2 {
+        left: 1350px;
+        margin-top: 30px;
+    }
+
+    .prix3 {
+        left: 1300px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    body {
+        width: 132%;
+    }
+
+}
+
+@media screen and (max-width:1160px) {
+    body {
+        width: 135%;
+    }
+
+}
+
+
+
+@media screen and (max-width:1120px) {
+    body {
+        width: 130%;
+    }
+
+    .navbar li a {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    body {
+        width: 140%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    body {
+        width: 140%;
+    }
+
+    .prix1 {
+        left: 700px;
+        top: 100px;
+    }
+
+    .prix2 {
+        left: 700px;
+        margin-top: 100px;
+    }
+
+    .prix3 {
+        left: 700px;
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    body {
+        width: 155%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    body {
+        width: 175%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    body {
+        width: 200%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    body {
+        width: 215%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    body {
+        width: 235%;
+    }
+}
+
+@media screen and (max-width:590px) {
+    body {
+        width: 260%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        width: 275%;
+    }
+}

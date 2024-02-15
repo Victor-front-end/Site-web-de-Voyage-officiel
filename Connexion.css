@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    background: url(img/teste\ background-inscription.jpg)no-repeat;
+    background-size: cover;
+    margin: 5px;
+}
+
+.logo {
+    margin: 0;
+}
+
+.logo img {
+
+    height: 70px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    font-size: 1.4rem;
+    flex-direction: end;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: end;
+
+}
+
+.navbar li {
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    margin-right: 40px;
+    animation: sloraro 0.8s;
+
+}
+
+.navbar li a {
+    font-family: 'Merriweather', serif;
+    padding: 3px;
+    margin-left: 80px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    outline: 1px solid;
+    outline-color: #ffffff70;
+    transition-duration: 0.2s;
+}
+
+@keyframes sloraro {
+    from {
+        transform: translateY(-200px);
+        opacity: 0.5;
+
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar li a:hover {
+    transition-duration: 0.2s;
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+    background-color: white;
+    color: black;
+    outline: 1px solid;
+    outline-color: black;
+}
+
+#Active {
+    background-color: white;
+    color: black;
+    outline: 1px solid;
+    outline-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+    margin: 20px;
+}
+
+form {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px auto;
+    border-radius: 10px;
+    box-shadow: 3px 4px 20px 0px black;
+    width: 30%;
+    background: linear-gradient(110deg, #5e9241, #84d7e5 75%);
+    animation: name-of-animation 3.5s;
+    z-index: 100;
+}
+
+h4 {
+    padding: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Merriweather', serif;
+}
+
+²& hr {
+    margin: 15px 0;
+    background-color: rgb(116, 116, 116);
+    width: 100%;
+}
+
+/* Nom */
+.Nom {
+    display: flex;
+    margin: 0 0 0;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+.Nom div label {
+    font-size: 1.2rem;
+}
+
+.Nom div input {
+    width: 100%;
+}
+
+.Nom div label,
+input {
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+/* Nom */
+
+
+/* Prenom */
+
+.Prenom div label {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.Prenom {
+    margin-bottom: 10px;
+}
+
+/* Prenom */
+
+/* email */
+.email div {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+}
+
+.email div label {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* email */
+
+/* mot de passe */
+
+
+.mdp {
+    margin-bottom: 10px;
+}
+
+
+/* mot de passe */
+
+/* btn connexion */
+.btn {
+    width: 100%;
+
+}
+
+.btn input:hover {
+    cursor: pointer;
+}
+
+.btn input {
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 100px;
+}
+
+.connecter {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* btn connexion */
+
+
+
+
+footer {
+    /* background-color: red; */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    margin: 0;
+    display: flex;
+
+}
+
+.icon img {
+    height: 50px;
+    margin: 0 25px;
+    padding: 1px;
+    outline: 1px solid;
+    outline-color: black;
+    background-color: white;
+    transition-duration: 1s;
+    animation: slideicons 4s;
+    overflow-y: hidden;
+}
+
+@keyframes slideicons {
+    from {
+        transform: translateY(-400px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    38% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes name-of-animation {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
